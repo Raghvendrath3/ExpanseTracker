@@ -1,0 +1,151 @@
+/* Budget.css */
+/* Back Button */
+.back-button {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #2196f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #1976d2;
+  transform: translateY(-2px);
+}
+
+.back-button:active {
+  background-color: #1565c0;
+  transform: translateY(0);
+}
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Budget Tab Container */
+.budget-tab {
+  position: relative;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff, #e8eaf6);
+  min-height: 100vh;
+}
+
+.budget-tab::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.budget-tab > * {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Budget Container */
+.budget-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+/* Budget Columns */
+.budget-column {
+  flex: 1;
+  min-width: 300px;
+  padding: 1rem;
+  background: #f9f9fc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons */
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Form Inputs */
+input, select, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Alerts and Suggestions */
+.budget-alerts, .budget-suggestions {
+  padding: 1rem;
+  background: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* List Items */
+.budget-list {
+  list-style: none;
+  padding: 0;
+}
+
+.budget-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.budget-list li button {
+  background-color: #e74c3c;
+}
+
+.budget-list li button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .budget-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,44 @@
+/* Navigation.css */
+.app-navigation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.app-navigation h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.home-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.home-button:hover {
+  background-color: rgba(67, 97, 238, 0.2);
+  transform: translateY(-2px);
+}
+
+.home-icon {
+  font-size: 18px;
+}
+
+/* Optional spacer if needed */
+.nav-spacer {
+  width: 100px;
+}

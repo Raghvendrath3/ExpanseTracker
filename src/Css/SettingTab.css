@@ -1,0 +1,48 @@
+/* SettingsTab.css */
+.settings-tab {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+}
+
+.settings-section {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: var(--primary-light);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.settings-section h3 {
+  margin-bottom: 12px;
+  color: var(--primary-color);
+}
+
+.settings-actions {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--primary-light);
+  border: none;
+  padding: 10px 16px;
+  margin: 8px 3px; /* Added margin for spacing */
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+button:active {
+  background-color: var(--primary-darker);
+  transform: scale(0.98);
+}
+.user-info p,
+.about-info p {
+  margin: 4px 0;
+  color: var(--text-light);
+}

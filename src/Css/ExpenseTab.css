@@ -1,0 +1,183 @@
+/* ExpenseTab.css */
+.add-expense-form {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow);
+}
+
+.quick-actions {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.date-filter {
+  flex: 1;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Added styles for filter date input and view all button */
+.filter-controls input[type="date"] {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.filter-controls input[type="date"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+}
+
+.filter-controls .secondary-button {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-controls .secondary-button:hover {
+  background-color: rgba(67, 97, 238, 0.15);
+}
+
+.quick-button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.quick-button {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 12px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.quick-button:hover {
+  background-color: rgba(67, 97, 238, 0.15);
+  border-color: var(--primary-color);
+}
+
+.more-button {
+  background-color: #f1f3f9;
+  color: var(--text-light);
+}
+
+.expenses-list {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.expense-group {
+  margin-bottom: 24px;
+}
+
+.expense-date {
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.expense-item:hover {
+  background-color: var(--primary-light);
+}
+
+.expense-details {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.expense-name {
+  font-weight: 500;
+}
+
+.expense-amount {
+  font-weight: 600;
+}
+
+.expense-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* ----- Added Button Styles ----- */
+
+/* Style for the "Add" button in the add expense form */
+.add-expense-form .primary-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.add-expense-form .primary-button:hover {
+  background-color: #324fd9;
+}
+select {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: var(--transition);
+}
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+}
+
+/* Icon buttons for edit and delete within expense-actions */
+.expense-actions .icon-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.expense-actions .icon-button.edit:hover {
+  background-color: var(--warning-color);
+}
+
+.expense-actions .icon-button.delete:hover {
+  background-color: var(--danger-color);
+}
