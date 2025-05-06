@@ -6,11 +6,11 @@
   "homepage": "https://github.com/Raghvendrath3/ExpanseTracker.git",
   "scripts": {
     "dev": "vite",
-      "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+    "lint": "eslint ."
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",
