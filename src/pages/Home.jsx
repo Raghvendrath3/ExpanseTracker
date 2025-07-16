@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
-import "./Home.css";
+import "./home.css";
 import "./Navbar.css";
 import Navbar from "./Navbar.jsx";
 import {
